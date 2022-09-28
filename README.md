@@ -1,11 +1,10 @@
 # Android Raptor
-Stealth Android Remote Manager
+## Stealth Android Remote Manager
 
 ![androidraptorcommands](https://user-images.githubusercontent.com/102340452/192880304-2c4f336d-69cb-4f9c-ae18-1b0c518a0552.png)
 
 
-Android Raptor Commands
-
+## Android Raptor Commands
 		/status => ping/pong like
 		/ss   	=> Capture And Download Live Screen Capture
 		/soff   => Turning Screen Off
@@ -39,25 +38,31 @@ Android Raptor Commands
 		/shutdown => Shutdown The Remote Device
 		/reboot => Reboot The Remote Device    
 -----------------------------------------------------------------
-Installation:
+## Installation:
 
-In your Android Device:
-Go to Settings
-Go to “About device” (Might be named slightly different)
-Click the “Build number” field 7 times. This will turn on “Developer options”
-Go back to Settings
-Go to “Developer options”
-Scroll down and enable “USB debugging”
-Plug the device into computer
+ ##### In your Android Device:
+- Go to Settings
+- Go to “About device” (Might be named slightly different)
+- Click the “Build number” field 7 times. This will turn on “Developer options”
+- Go back to Settings
+- Go to “Developer options”
+- Scroll down and enable “USB debugging”
+- Plug the device into computer
 
-On a computer run the following commands in terminal to initialize ADB:
-sudo apt install adb
-adb start-server
+##### On a computer run the following commands in terminal to initialize ADB:
+- sudo apt install adb
+- adb start-server
+- git clone https://github.com/elieser9001/AndroidRaptor.git
+- cd AndroidRaptor
 
 Your device might prompt you with a trust dialog. Click accept.
 
-In your Computer:
-git clone https://github.com/elieser9001/AndroidRaptor.git
-cd AndroidRaptor
+##### On Telegram:
+- [Create a new Telegram bot with BotFather](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-telegram?view=azure-bot-service-4.0#create-a-new-telegram-bot-with-botfather)
+- Copy and save the Telegram bot's access token for later steps.
+- [Get Your Telegram User Id](https://medium.com/@tabul8tor/how-to-find-your-telegram-user-id-6878d54acafa)
 
-GOARCH=arm64 GOOS=linux go build -ldflags "-s -w" -o androidraptor main.go && adb push androidraptor /data/local/tmp/androidraptor && adb shell 'chmod 777 /data/local/tmp/androidraptor' && adb shell "nohup ./data/local/tmp/androidraptor -uid TELEGRAM_USER_ID -abk API_BOT_KEY &>/dev/null &"
+## Build and Execute in Your Android Mobile Device
+GOARCH=arm64 GOOS=linux go build -ldflags "-s -w" -o androidraptor main.go && adb push androidraptor /data/local/tmp/androidraptor && adb shell 'chmod 777 /data/local/tmp/androidraptor' && adb shell "nohup ./data/local/tmp/androidraptor -uid TELEGRAM_USER_ID -abk API_BOT_ACCESS_TOKEN &>/dev/null &"
+
+- Now you can unplugg your mobile device and control it from anywhere through the bot in Telegram.
