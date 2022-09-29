@@ -27,8 +27,7 @@
 		/ua => Getting All Applications Installed By The User
 		/gc => Getting All Google Contacts From Remote Device 
 		/wfi => Getting Wifi IP From Remote Device 
-		/wfm => Getting Wifi IP From Remote Device 
-		/wfi => Getting Wifi MAC Address From Remote Device 
+		/wfm => Getting Wifi MAC Address From Remote Device 
 		/wfs => Getting Wifi SSID Name From Remote Device
 		/ca => Getting Current Active Activity
 		/cp => Getting Current Active Package Name
