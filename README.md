@@ -1,5 +1,6 @@
 # Android Raptor
 ## Stealth Android Remote Manager
+************ NO ROOT REQUIRED ************
 
 ![androidraptorcommands](https://user-images.githubusercontent.com/102340452/192880304-2c4f336d-69cb-4f9c-ae18-1b0c518a0552.png)
 
