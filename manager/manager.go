@@ -40,7 +40,7 @@ const (
 	GET_WHATSAPP_STATUSES    = "wss"
 	GET_WHATSAPP_VOICE_NOTES = "wsvn"
 	GET_PHOTO                = "getp"
-	GET_VIDEO                = "gv"
+	GET_VIDEO                = "getv"
 	GET_AUDIO                = "ga"
 	GET_DOCUMENT             = "gd"
 	OPEN_URL                 = "url"
