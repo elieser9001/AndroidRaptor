@@ -26,7 +26,7 @@ type File struct {
 
 // ACTIONS CONSTS
 const (
-	HELP                     = "help"
+	START                    = "help"
 	STATUS                   = "status"
 	SCREEN_CAPTURE           = "ss"
 	TURN_SCREEN_OFF          = "soff"
@@ -60,6 +60,7 @@ const (
 	GET_BATTERY_LEVEL        = "getbl"
 	SHUTDOWN_MOBILE          = "shutdown"
 	REBOOT_MOBILE            = "reboot"
+	HELP                     = "help"
 )
 
 // ANDROID GLOBAL PATHS
