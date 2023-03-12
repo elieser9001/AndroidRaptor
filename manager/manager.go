@@ -26,7 +26,7 @@ type File struct {
 
 // ACTIONS CONSTS
 const (
-	START                    = "help"
+	START                    = "start"
 	STATUS                   = "status"
 	SCREEN_CAPTURE           = "ss"
 	TURN_SCREEN_OFF          = "soff"
@@ -246,7 +246,7 @@ func Start(adminId int64, apiBotKey string) {
 			param := update.Message.CommandArguments()
 
 			switch update.Message.Command() {
-			case HELP:
+			case HELP, START:
 				msg.Text = help
 
 			case GET_PHOTO:
